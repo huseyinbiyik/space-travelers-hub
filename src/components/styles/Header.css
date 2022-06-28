@@ -1,0 +1,53 @@
+header {
+  width: 100vw;
+  height: 70px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* We can use this as our main wrapper */
+.main-wrapper {
+  width: calc(100% - 200px);
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.App-logo {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-text {
+  font-size: 24px;
+}
+
+.App-nav {
+  display: flex;
+}
+
+.App-link-container {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.App-link-container > li:last-child::before {
+  content: '|';
+}
