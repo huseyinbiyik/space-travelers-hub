@@ -1,7 +1,3 @@
-import React from 'react';
+const missonsApiUrl = "https://api.spacexdata.com/v3/missions";
 
-export default function missionReducer() {
-  return (
-    <div>missionReducer</div>
-  );
-}
+const SHOW_MISSIONS = "space-travelers-hub/missions/missions";
