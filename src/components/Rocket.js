@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Rocket.css';
 import { useDispatch } from 'react-redux';
+import { addRocketReservation } from '../redux/rockets/rockets';
 
 export default function Rocket(props) {
   const {
@@ -9,7 +10,7 @@ export default function Rocket(props) {
   const dispatch = useDispatch();
 
   const reserveRocket = () => {
-    dispatch(addReservation(id));
+    dispatch(addRocketReservation(id));
   };
 
   return (

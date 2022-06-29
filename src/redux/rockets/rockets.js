@@ -1,10 +1,16 @@
 const apiUrl = 'https://api.spacexdata.com/v3/rockets';
 
-const SHOW_ROCKETS = 'space-travelers-hub/rockets/rockets';
+const SHOW_ROCKETS = 'space-travelers-hub/rockets/SHOW_ROCKETS';
+const ADD_ROCKET_RESERVATION = 'space-travelers-hub/rockets/ADD_ROCKET_RESERVATION';
 
 export const showRockets = (data) => ({
   type: SHOW_ROCKETS,
   data,
+});
+
+export const addRocketReservation = (id) => ({
+  type: ADD_ROCKET_RESERVATION,
+  id,
 });
 
 const filterData = (data) => {
@@ -14,7 +20,7 @@ const filterData = (data) => {
       rocket_name: rocket.rocket_name,
       description: rocket.description,
       img: rocket.flickr_images[0],
-      reserved: true,
+      reserved: false,
     }
   ));
   return showRockets(rockets);
@@ -28,11 +34,18 @@ export const fetchRockets = () => (
   }
 );
 
-export default function rocketsReducer(state = [], action) {
+const rocketsReducer = (state = [], action) => {
   switch (action.type) {
     case SHOW_ROCKETS:
       return action.data;
+    case ADD_ROCKET_RESERVATION:
+      return state.map((rocket) => {
+        if (rocket.id !== action.id) return rocket;
+        return { ...rocket, reserved: true };
+      });
     default:
       return state;
   }
-}
+};
+
+export default rocketsReducer;
