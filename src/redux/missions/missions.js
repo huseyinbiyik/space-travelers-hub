@@ -16,3 +16,9 @@ const filterMissions = (data) => {
   }));
   return showMissions(missions);
 };
+
+export const fetchMissions = () => (dispatch) => {
+  fetch(`${missionsApiUrl}`)
+    .then((response) => response.json())
+    .then((json) => dispatch(filterMissions(json)));
+};
