@@ -4,7 +4,7 @@ header {
   border-bottom: 1px solid gainsboro;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* We can use this as our main wrapper */
@@ -43,9 +43,13 @@ header {
 
 .navbar-item {
   text-decoration: none;
-  color: black;
+  color: #017bfe;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.profile {
+  margin-right: 0;
 }
 
 .App-link-container > li:last-child::before {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchRockets } from '../redux/rockets/rockets';
 import Rocket from './Rocket';
+import './styles/Rockets.css';
 
 export default function Rockets() {
   const rocketData = useSelector((state) => state.rockets);
@@ -21,7 +22,7 @@ export default function Rockets() {
     />
   ));
   return (
-    <div className="main-wrapper">
+    <div className="main-wrapper rocket-wrapper">
       {rocketElements}
     </div>
   );

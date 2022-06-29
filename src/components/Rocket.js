@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/Rocket.css';
 
 export default function Rocket(props) {
   const {
@@ -8,7 +9,7 @@ export default function Rocket(props) {
   return (
     <div className="single-rocket">
       <div className="rocket-image-container">
-        <img src={img} alt={title} />
+        <img className="rocket-image" src={img} alt={title} />
       </div>
       <div className="rocket-desc-container">
         <h2 className="rocket-title">{title}</h2>
