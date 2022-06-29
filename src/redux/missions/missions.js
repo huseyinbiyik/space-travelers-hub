@@ -22,3 +22,12 @@ export const fetchMissions = () => (dispatch) => {
     .then((response) => response.json())
     .then((json) => dispatch(filterMissions(json)));
 };
+
+export default function missionsReducer(state = [], action) {
+  switch (action.type) {
+    case SHOW_MISSIONS:
+      return action.data;
+    default:
+      return state;
+  }
+}
