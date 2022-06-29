@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Rocket.css';
 import { useDispatch } from 'react-redux';
-import { addRocketReservation } from '../redux/rockets/rockets';
+import { addRocketReservation, cancelRocketReservation } from '../redux/rockets/rockets';
 
 export default function Rocket(props) {
   const {
@@ -11,6 +11,10 @@ export default function Rocket(props) {
 
   const reserveRocket = () => {
     dispatch(addRocketReservation(id));
+  };
+
+  const cancelRocket = () => {
+    dispatch(cancelRocketReservation(id));
   };
 
   return (
@@ -25,6 +29,8 @@ export default function Rocket(props) {
           {description}
         </p>
         <button className="rocket-reserve-btn" id={id} type="submit" onClick={reserveRocket}>Reserve Rocket</button>
+        {/* I will delete this button below on the future task, it is there for test */}
+        <button className="rocket-reserve-btn" id={id} type="submit" onClick={cancelRocket}>Cancel Rocket</button>
       </div>
     </div>
   );
