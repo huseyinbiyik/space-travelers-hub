@@ -14,6 +14,7 @@ const filterData = (data) => {
       rocket_name: rocket.rocket_name,
       description: rocket.description,
       img: rocket.flickr_images[0],
+      reserved: true,
     }
   ));
   return showRockets(rockets);

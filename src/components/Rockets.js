@@ -19,6 +19,7 @@ export default function Rockets() {
       img={rocket.img}
       description={rocket.description}
       title={rocket.rocket_name}
+      reserved={rocket.reserved}
     />
   ));
   return (
