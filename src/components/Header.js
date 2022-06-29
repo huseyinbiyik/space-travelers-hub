@@ -6,7 +6,6 @@ import logo from './images/logo.png';
 export default function header() {
   const activeStyle = {
     textDecoration: 'underline',
-    color: 'black',
   };
 
   return (
@@ -42,7 +41,7 @@ export default function header() {
             </li>
             <li>
               <NavLink
-                className="navbar-item"
+                className="navbar-item profile"
                 to="/profile"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >

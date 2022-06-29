@@ -1,0 +1,28 @@
+.single-rocket {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.rocket-image {
+  width: 300px;
+  height: auto;
+}
+
+.rocket-title {
+  margin-top: 0;
+}
+
+.rocket-desc {
+  line-height: 25px;
+}
+
+.rocket-reserve-btn {
+  height: 40px;
+  color: white;
+  background-color: #017bfe;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+}
