@@ -9,12 +9,16 @@ export default function Profile() {
 
   return (
     <div className="main-wrapper profile-wrapper">
-      <div className="my-missions-wrapper"><h2>My Missions</h2></div>
+      <div className="my-missions-wrapper">
+        <h2>My Missions</h2>
+        {/* This is the container for your active missions, Joseph */}
+      </div>
+
       <div className="my-rockets-wrapper">
         <h2>My Rockets</h2>
         <div className="reserved-rockets-container">
           {
-              profileRocketData.map((rocket) => (<p key={rocket.id}>{rocket.rocket_name}</p>))
+              profileRocketData.map((rocket) => (<p className="reserved-rocket" key={rocket.id}>{rocket.rocket_name}</p>))
         }
         </div>
       </div>
