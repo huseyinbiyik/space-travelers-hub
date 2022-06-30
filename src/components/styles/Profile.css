@@ -1,0 +1,26 @@
+.profile-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.my-missions-wrapper {
+  width: 50%;
+}
+
+.my-rockets-wrapper {
+  width: 50%;
+}
+
+.reserved-rockets-container {
+  border: 1px solid gray;
+}
+
+.reserved-rocket {
+  border-bottom: 1px solid gray;
+  padding: 15px;
+  margin: 0;
+}
+
+.reserved-rocket:last-of-type {
+  border-bottom: 0;
+}
