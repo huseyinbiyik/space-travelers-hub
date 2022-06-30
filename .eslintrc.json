@@ -24,6 +24,6 @@
   "ignorePatterns": [
     "dist/",
     "build/",
-    "test"
+    "tests"
   ]
 }
