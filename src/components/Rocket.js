@@ -28,9 +28,10 @@ export default function Rocket(props) {
           <small className={reserved ? 'rocket-res-status' : ''}>{reserved ? 'Reserved' : ''}</small>
           {description}
         </p>
-        <button className="rocket-reserve-btn" id={id} type="submit" onClick={reserveRocket}>Reserve Rocket</button>
-        {/* I will delete this button below on the future task, it is there for test */}
-        <button className="rocket-reserve-btn" id={id} type="submit" onClick={cancelRocket}>Cancel Rocket</button>
+
+        {reserved ? (
+          <button className="rocket-cancel-btn" id={id} type="submit" onClick={cancelRocket}>Cancel Reservation</button>
+        ) : (<button className="rocket-reserve-btn" id={id} type="submit" onClick={reserveRocket}>Reserve Rocket</button>) }
       </div>
     </div>
   );
