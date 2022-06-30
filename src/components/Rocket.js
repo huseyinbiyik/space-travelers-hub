@@ -25,7 +25,7 @@ export default function Rocket(props) {
       <div className="rocket-desc-container">
         <h2 className="rocket-title">{title}</h2>
         <p className="rocket-desc">
-          <span className="rocket-res-status">{reserved}</span>
+          <small className={reserved ? 'rocket-res-status' : ''}>{reserved ? 'Reserved' : ''}</small>
           {description}
         </p>
         <button className="rocket-reserve-btn" id={id} type="submit" onClick={reserveRocket}>Reserve Rocket</button>
