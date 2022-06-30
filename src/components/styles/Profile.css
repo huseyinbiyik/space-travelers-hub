@@ -1,0 +1,12 @@
+.profile-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.my-missions-wrapper{
+  width: 50%;
+}
+
+.my-rockets-wrapper {
+  width: 50%;
+}
