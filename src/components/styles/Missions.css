@@ -1,0 +1,81 @@
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-wrapper table {
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.main-wrapper thead {
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+.main-wrapper thead th {
+  padding: 10px;
+}
+
+.main-wrapper thead th:first-child {
+  width: 10%;
+}
+
+.main-wrapper thead th:nth-child(2) {
+  width: 66%;
+}
+
+.main-wrapper thead th:nth-child(3) {
+  width: 12%;
+}
+
+.main-wrapper thead th:nth-child(4) {
+  width: 12%;
+}
+
+.main-wrapper tbody tr td {
+  padding: 10px;
+}
+
+.missions_name {
+  font-weight: bold;
+}
+
+.missions_status {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.missions_status p {
+  background-color: #626060;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.missions_set_active p {
+  background-color: dodgerblue;
+}
+
+.missions_actions {
+  text-align: center;
+  font-weight: 500;
+}
+
+.missions_actions button {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #626060;
+  background-color: transparent;
+  color: #626060;
+}
+
+.missions_actions_active button {
+  border: 1px solid red;
+  color: red;
+}
