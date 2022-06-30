@@ -2,6 +2,7 @@ const missionsApiUrl = 'https://api.spacexdata.com/v3/missions';
 
 const SHOW_MISSIONS = 'space-travelers-hub/missions/SHOW_MISSIONS';
 const JOIN_MISSIONS = 'space-travelers-hub/missions/JOIN_MISSIONS';
+const LEAVE_MISSION = 'space-travelers-hub/missions/LEAVE_MISSION';
 
 export const showMissions = (data) => ({
   type: SHOW_MISSIONS,
@@ -9,6 +10,11 @@ export const showMissions = (data) => ({
 });
 export const joinMission = (id) => ({
   type: JOIN_MISSIONS,
+  id,
+});
+
+export const leaveMission = (id) => ({
+  type: LEAVE_MISSION,
   id,
 });
 
@@ -36,6 +42,11 @@ const missionsReducer = (state = [], action) => {
       return state.map((mission) => {
         if (mission.id !== action.id) return mission;
         return { ...mission, reserved: true };
+      });
+    case LEAVE_MISSION:
+      return state.map((mission) => {
+        if (mission.id !== action.id) return mission;
+        return { ...mission, reserved: false };
       });
     default:
       return state;
