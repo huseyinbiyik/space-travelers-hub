@@ -1,9 +1,9 @@
-.missions {
+.main-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.missions table {
+.main-wrapper table {
   margin-top: 30px;
   width: 100%;
   text-align: left;
@@ -11,32 +11,32 @@
   margin-bottom: 50px;
 }
 
-.missions thead {
+.main-wrapper thead {
   font-weight: bold;
   background-color: #ccc;
 }
 
-.missions thead th {
+.main-wrapper thead th {
   padding: 10px;
 }
 
-.missions thead th:first-child {
+.main-wrapper thead th:first-child {
   width: 10%;
 }
 
-.missions thead th:nth-child(2) {
+.main-wrapper thead th:nth-child(2) {
   width: 66%;
 }
 
-.missions thead th:nth-child(3) {
+.main-wrapper thead th:nth-child(3) {
   width: 12%;
 }
 
-.missions thead th:nth-child(4) {
+.main-wrapper thead th:nth-child(4) {
   width: 12%;
 }
 
-.missions tbody tr td {
+.main-wrapper tbody tr td {
   padding: 10px;
 }
 

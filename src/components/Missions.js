@@ -4,7 +4,7 @@ import { fetchMissions } from '../redux/missions/missions';
 import styles from './styles/Missions.css';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.mission);
   const dispatch = useDispatch();
   useEffect(() => {
     if ((missions || []).length === 0) {
@@ -15,7 +15,7 @@ const Missions = () => {
   const tableHeaders = ['Mission', 'Description', 'Status', 'Action'];
 
   return (
-    <section className={styles.missions}>
+    <section className="main-wrapper">
       <table border={1} cellSpacing={0}>
         <thead>
           <tr>
