@@ -12,11 +12,11 @@
 }
 
 .reserved-rockets-container {
-  border: 1px solid gray;
+  border: 1px solid gainsboro;
 }
 
 .reserved-rocket {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid gainsboro;
   padding: 15px;
   margin: 0;
 }
