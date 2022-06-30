@@ -5,7 +5,7 @@ import {
   joinMission,
   leaveMission,
 } from '../redux/missions/missions';
-import styles from './styles/Missions.css';
+import styles from './styles/Missions.module.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.mission);
@@ -47,7 +47,14 @@ const Missions = () => {
                     mission.reserved ? styles.missions_set_active : ''
                   }`}
                 >
-                  <p>{mission.reserved ? 'Active Member' : 'Not a Member'}</p>
+                  <p
+                    className={`${styles.missions_status} ${
+                      mission.reserved ? styles.missions_st_active : ''
+                    }`}
+                  >
+                    {mission.reserved && 'Active Member'}
+                    {!mission.reserved && 'NOT A MEMBER'}
+                  </p>
                 </td>
                 <td
                   className={`${styles.missions_actions} ${
@@ -59,7 +66,8 @@ const Missions = () => {
                     onClick={() => toggleReservation(mission)}
                     type="button"
                   >
-                    {mission.reserved ? 'Leave Mission' : 'Join Mission'}
+                    {mission.reserved && 'Leave Mission'}
+                    {!mission.reserved && 'Join Mission'}
                   </button>
                 </td>
               </tr>
