@@ -7,16 +7,17 @@ export const showMissions = (data) => ({
   type: SHOW_MISSIONS,
   data,
 });
-export const joinMission = (mission_id) => ({
+export const joinMission = (id) => ({
   type: JOIN_MISSIONS,
-  mission_id,
+  id,
 });
 
 const filterMissions = (data) => {
   const missions = data.map((mission) => ({
-    mission_id: mission.mission_id,
+    id: mission.mission_id,
     mission_name: mission.mission_name,
     description: mission.description,
+    reserved: false,
   }));
   return showMissions(missions);
 };
@@ -33,7 +34,7 @@ const missionsReducer = (state = [], action) => {
       return action.data;
     case JOIN_MISSIONS:
       return state.map((mission) => {
-        if (mission.mission_id !== action.mission_id) return mission;
+        if (mission.id !== action.id) return mission;
         return { ...mission, reserved: true };
       });
     default:

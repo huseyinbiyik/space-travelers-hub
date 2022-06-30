@@ -14,7 +14,7 @@ const Missions = () => {
 
   const toggleReservation = (mission) => {
     if (!mission.reserved) {
-      dispatch(joinMission(mission.mission_id));
+      dispatch(joinMission(mission.id));
     }
   };
 
@@ -33,7 +33,7 @@ const Missions = () => {
         <tbody>
           {missions
             && missions.map((mission) => (
-              <tr key={mission.mission_id}>
+              <tr key={mission.id}>
                 <td className={styles.missions_name}>{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td
@@ -49,8 +49,8 @@ const Missions = () => {
                   }`}
                 >
                   <button
-                    key={mission.mission_id}
-                    onClick={() => toggleReservation(mission.mission_id)}
+                    key={mission.id}
+                    onClick={() => toggleReservation(mission)}
                     type="button"
                   >
                     {mission.reserved ? 'Leave Mission' : 'Join Mission'}
