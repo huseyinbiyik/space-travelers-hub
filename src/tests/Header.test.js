@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
 import { HashRouter as Router } from 'react-router-dom';
 import Header from '../components/Header';
-import store from './../redux/configureStore.js';
+import store from '../redux/configureStore';
 
 describe('Header ui and snapshot test', () => {
   it('should render Header component', () => {
