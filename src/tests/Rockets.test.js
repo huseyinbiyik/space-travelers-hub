@@ -5,7 +5,7 @@ import store from '../Redux/configureStore';
 import Rockets from '../components/Rockets';
 import Rocket from '../components/Rocket';
 import rocketsReducer, { showRockets, addRocketReservation, cancelRocketReservation } from '../redux/rockets/rockets';
-import rocketTestData from './testdata';
+import rocketTestData from './testData';
 
 describe('Rocket', () => {
   it('should render rocket component', () => {

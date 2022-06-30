@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header ui and snapshot test should render Header component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="App-header"
+      >
+        <div
+          class="main-wrapper"
+        >
+          <div
+            class="logo-wrapper"
+          >
+            <img
+              alt="logo"
+              class="App-logo"
+              src="logo.png"
+            />
+            <p
+              class="logo-text"
+            >
+              Space Traveler\`s Hub
+            </p>
+          </div>
+          <nav
+            class="App-nav"
+          >
+            <ul
+              class="App-link-container"
+            >
+              <li>
+                <a
+                  aria-current="page"
+                  class="navbar-item active"
+                  href="#/"
+                  style="text-decoration: underline;"
+                >
+                  Rockets
+                </a>
+              </li>
+              <li>
+                <a
+                  class="navbar-item"
+                  href="#/missions"
+                >
+                  Missions
+                </a>
+              </li>
+              <li>
+                <a
+                  class="navbar-item profile"
+                  href="#/profile"
+                >
+                  My Profile
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="App-header"
+    >
+      <div
+        class="main-wrapper"
+      >
+        <div
+          class="logo-wrapper"
+        >
+          <img
+            alt="logo"
+            class="App-logo"
+            src="logo.png"
+          />
+          <p
+            class="logo-text"
+          >
+            Space Traveler\`s Hub
+          </p>
+        </div>
+        <nav
+          class="App-nav"
+        >
+          <ul
+            class="App-link-container"
+          >
+            <li>
+              <a
+                aria-current="page"
+                class="navbar-item active"
+                href="#/"
+                style="text-decoration: underline;"
+              >
+                Rockets
+              </a>
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                href="#/missions"
+              >
+                Missions
+              </a>
+            </li>
+            <li>
+              <a
+                class="navbar-item profile"
+                href="#/profile"
+              >
+                My Profile
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
