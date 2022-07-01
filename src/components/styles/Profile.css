@@ -1,6 +1,7 @@
 .profile-wrapper {
   display: flex;
   align-items: flex-start;
+  gap: 20px;
 }
 
 .my-missions-wrapper {
@@ -22,5 +23,19 @@
 }
 
 .reserved-rocket:last-of-type {
+  border-bottom: 0;
+}
+
+.reserved-missions-container {
+  border: 1px solid gray;
+}
+
+.reserved-mission {
+  border-bottom: 1px solid gray;
+  padding: 15px;
+  margin: 0;
+}
+
+.reserved-mission:last-of-type {
   border-bottom: 0;
 }
