@@ -4,6 +4,7 @@ import { render, screen } from '@testing-library/react';
 import { HashRouter as Router } from 'react-router-dom';
 import Header from '../components/Header';
 import store from '../redux/configureStore';
+import '@testing-library/jest-dom'
 
 describe('Header ui and snapshot test', () => {
   it('should render Header component', () => {
@@ -25,6 +26,6 @@ describe('Header ui and snapshot test', () => {
         </Router>
       </Provider>,
     );
-    expect(screen.getByText('Rockets')).toBeInTheDocument();
+    expect(screen.getByText('Rockets' || 'Missions')).toBeInTheDocument();
   });
 });
