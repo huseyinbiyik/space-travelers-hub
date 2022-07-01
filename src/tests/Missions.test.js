@@ -1,13 +1,13 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { render } from "@testing-library/react";
-import store from "../Redux/configureStore";
+import store from "../redux/configureStore";
 import Missions from "./../components/Missions";
 import missionsReducer, {
   showMissions,
   joinMission,
   leaveMission,
-} from "../Redux/missions/missions";
+} from "../redux/missions/missions";
 import testDataMissions from "./testdatamissions";
 
 describe("Mission", () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
-import store from '../Redux/configureStore';
+import store from './../redux/configureStore';
 import Rockets from '../components/Rockets';
 import Rocket from '../components/Rocket';
 import rocketsReducer, { showRockets, addRocketReservation, cancelRocketReservation } from '../redux/rockets/rockets';
